@@ -37,6 +37,10 @@ code {
 .navul li {
   list-style-type: none;
 }
+.navlink {
+  text-decoration: none;
+  color: #fff;
+}
 /*****/
 .parentIcons {
   background: black;
@@ -51,7 +55,7 @@ code {
   flex-direction: column;
   gap: 15px;
   padding-top: 150px;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
 }
 .background {
   position: relative;
@@ -77,11 +81,11 @@ code {
 }
 .title {
   rotate: -90deg;
-  padding-bottom: 60px;
+  padding-bottom: 115px;
   color: #fff;
   width: 15px;
-  transform: translate3d(0, 45px, 0);
-  font-weight: 200;
+  transform: translate3d(0, 75px, 0);
+  font-weight: 400;
 }
 
 /****home****/
@@ -91,6 +95,7 @@ code {
   padding-bottom: 30px;
   font-size: 20px;
 }
+
 .nameTitre {
   color: red;
 }
@@ -101,39 +106,203 @@ code {
 .felicitation {
   height: 16px;
 }
-.barchart {
-  height: 400px;
-  width: 800px;
-  transform: translate3d(0, 50px, 0);
+
+.activityChart {
+  background-color: #eee;
   padding: 20px;
+  position: relative;
+  width: 100%;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 700px;
+  transform: translate3d(0, 50px, 0);
+}
+.activityChartToolip {
+  background: red;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  height: 70px;
+  width: 50px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 25px;
 }
-/* .stylebar {
-} */
-.navStyleBar {
+
+.activityWrap {
+  height: 100%;
+  width: 100%;
+}
+
+.activityChartTitle {
+  position: absolute;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+  top: 30px;
+  left: 30px;
+}
+
+.activityYAxis,
+.activityXAxis {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.activityLegendColor {
+  color: #74798c;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.horizontalgraphics {
   display: flex;
+  transform: translate3d(0, 100px, 0);
+  gap: 20px;
+}
+
+.sessionDuration {
+  background-color: #ff0000;
+  border-radius: 5px;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+.sessionTitle {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0.5;
+  width: 150px;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
+.session {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  height: 100%;
 }
-.ParentsinfosUtilisateurs {
+.SimpleRadarChart {
   display: flex;
-  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
-.infosUtilisateurs {
+.perfomance {
+  background: #282d30;
+  padding: 5px;
+  height: 190px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.circlescore {
+  padding: 10px;
+  height: 180px;
+  width: 200px;
+  border-radius: 5px;
+  position: relative;
+  background-color: #fbfbfb;
   display: flex;
+  justify-content: center;
+}
+.scoretoday {
+  width: 100%;
+  height: 100%;
+}
+.scoretodaytitle {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+}
+.score {
+  position: absolute;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
   gap: 5px;
   align-items: center;
+  left: 75px;
+  top: 60px;
+  z-index: 5;
+}
+.scoreResult {
+  font-weight: 700;
+}
+.scoreText {
   color: darkgray;
-  font-size: 15px;
-  transform: translate3d(0, 5px, 0);
 }
-.Activicte {
-  color: black;
-  font-size: 18px;
-  font-weight: 600;
+.parentblocnutrition {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 580px;
+  right: 100px;
+  top: 35%;
 }
-.sous-barchart {
-  background: red;
+.blocNutrition {
+  background: darkgray;
+  padding: 15px;
+  display: flex;
+  gap: 35px;
+  height: calc((580px / 4) - 120px / 4);
+  background: #fbfbfb;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  align-items: center;
+}
+.blocNutritionimg {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+.blocNutritioncaloriestext {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.blocNutritionimg {
+  padding: 15px;
+  background: #ffc0cb;
+  border-radius: 6px;
+}
+
+.blocNutritiontext {
+  font-size: 14px;
+  color: darkgray;
+  font-weight: 100;
+}
+.blocNutritioncalories {
+  font-weight: 500;
+}
+.found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 250px;
+  gap: 40px;
+}
+.retourPage {
+  color: #ff0000;
+}
+.DurationChartTooltip {
+  display: flex;
+  width: 40px;
+  height: 25px;
+  background-color: #ffffff;
+  font-size: 8px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
 }

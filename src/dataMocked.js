@@ -117,7 +117,7 @@ const USER_ACTIVITY = [
 const USER_AVERAGE_SESSIONS = [
   {
     userId: 12,
-    sessions: [
+    Sessions: [
       {
         day: 1,
         sessionLength: 30,
@@ -150,7 +150,7 @@ const USER_AVERAGE_SESSIONS = [
   },
   {
     userId: 18,
-    sessions: [
+    Sessions: [
       {
         day: 1,
         sessionLength: 30,
