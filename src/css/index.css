@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -18,9 +19,9 @@ code {
   position: absolute;
   background: #000000;
   display: flex;
-  gap: 185px;
+  gap: 100px;
   padding-left: 25px;
-  padding-right: 50px;
+  padding-right: 40px;
   align-items: center;
 }
 .logos {

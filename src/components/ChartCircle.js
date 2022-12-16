@@ -37,13 +37,7 @@ export function ChartCircle({ data, dataScore, dataToday }) {
           rotate: "-100deg",
         }}
       >
-        <RadialBar
-          minAngle={15}
-          dataKey="score"
-          fill="#FF0000"
-          // cornerRadius={15}
-          barSize={10}
-        />
+        <RadialBar minAngle={15} dataKey="score" fill="#FF0000" barSize={10} />
         <PolarAngleAxis type="number" domain={[0, 1]} tick={false} />
         <circle cx="50%" cy="50%" fill="white" r="55"></circle>
       </RadialBarChart>
@@ -52,5 +46,4 @@ export function ChartCircle({ data, dataScore, dataToday }) {
 }
 ChartCircle.propTypes = {
   data: PropTypes.array.isRequired,
-  dataToday: PropTypes.number.isRequired,
 };
